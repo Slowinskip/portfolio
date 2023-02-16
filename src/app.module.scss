@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+$hover-color: #81ecec;
+$transition: all 1s;
+
+main {
+  font-family: 'Lilita One', cursive;
+  .nav {
+    background-color: #2d3436;
+
+    .navLogo {
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      border: 1px solid red;
+      color: #636e72;
+      transition: $transition;
+
+      &:hover {
+        .navP {
+          color: $hover-color;
+          transform: rotate(1turn);
+        }
+      }
+
+      .navP {
+        font-size: 60px;
+        transition: $transition;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .navLinks {
+      display: flex;
+      justify-content: end;
+      padding: 25px;
+      transition: $transition;
+
+      a {
+        margin-right: 35px;
+        text-decoration: none;
+        color: #636e72;
+        font-size: 25px;
+        font-weight: bold;
+        height: 100%;
+
+        &:hover {
+          color: $hover-color;
+          transition: $transition;
+        }
+      }
+    }
+  }
+  .bodyContainer {
+    background-color: #636e72;
+  }
+}
