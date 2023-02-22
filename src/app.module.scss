@@ -8,6 +8,11 @@ $transition: all 0.5s;
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --size: 150px;
+  --scale: 1;
+  --speed: 10s;
+}
 
 main {
   font-family: 'Lilita One', cursive;
@@ -65,79 +70,84 @@ main {
     background-color: #4b4b4b;
     padding: 64px 0;
 
-    .headDiv {
-      transition: $transition;
-      margin: 36px 0;
-      padding-bottom: 60px;
+    .separate {
+      padding: 100px 0;
+    }
+    .rotation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        transform-style: preserve-3d;
+        height: var(--size);
+        aspect-ratio: 1;
+      }
 
-      .loader {
-        margin-left: 40px;
-        width: 36em;
-        height: 36em;
-        font-size: 10px;
+      .box {
         position: relative;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
       }
 
-      .loader .face {
-        position: absolute;
-        border-radius: 50%;
-        border-style: solid;
-        animation: animate023845 3s linear infinite;
-      }
+      @keyframes spin {
+        from {
+          transform: rotate3d(1, -1, 1, 0deg);
+        }
 
-      .loader .face:nth-child(1) {
-        width: 100%;
-        height: 100%;
-        color: $hover-color;
-        border-color: currentColor transparent transparent currentColor;
-        border-width: 0.2em 0.2em 0em 0em;
-        --deg: -45deg;
-        animation-direction: normal;
-      }
-
-      .loader .face:nth-child(2) {
-        width: 70%;
-        height: 70%;
-        color: lime;
-        border-color: currentColor currentColor transparent transparent;
-        border-width: 0.2em 0em 0em 0.2em;
-        --deg: -135deg;
-        animation-direction: reverse;
-      }
-
-      .loader .face .circle {
-        position: absolute;
-        width: 50%;
-        height: 0.1em;
-        top: 50%;
-        left: 50%;
-        background-color: transparent;
-        transform: rotate(var(--deg));
-        transform-origin: left;
-      }
-
-      .loader .face .circle::before {
-        position: absolute;
-        top: -0.5em;
-        right: -0.5em;
-        content: '';
-        width: 1em;
-        height: 1em;
-        background-color: currentColor;
-        border-radius: 50%;
-        box-shadow: 0 0 2em, 0 0 4em, 0 0 6em, 0 0 8em, 0 0 10em,
-          0 0 0 0.5em rgba(255, 255, 0, 0.1);
-      }
-
-      @keyframes animate023845 {
         to {
-          transform: rotate(1turn);
+          transform: rotate3d(1, -1, 1, 360deg);
         }
       }
 
+      .content {
+        animation: var(--speed) linear 0.5s infinite running spin;
+        transition: transform 1s;
+      }
+
+      .core {
+        position: absolute;
+        width: var(--size);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        animation: var(--speed) linear 0.5s infinite running spin;
+        animation-direction: reverse;
+      }
+
+      .face {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .a {
+        transform: rotateY(90deg) translateZ(calc(var(--size) * var(--scale)));
+      }
+
+      .b {
+        transform: translateZ(calc(var(--size) * var(--scale)));
+      }
+
+      .c {
+        transform: rotateY(180deg) translateZ(calc(var(--size) * var(--scale)));
+      }
+
+      .d {
+        transform: rotateY(-90deg) translateZ(calc(var(--size) * var(--scale)));
+      }
+
+      .e {
+        transform: rotateX(-90deg) translateZ(calc(var(--size) * var(--scale)));
+      }
+
+      .f {
+        transform: rotateX(90deg) translateZ(calc(var(--size) * var(--scale)));
+      }
+    }
+
+    .headDiv {
       h1,
       h2 {
         margin-left: 40px;
