@@ -16,7 +16,7 @@ function App() {
             <Col>
               <div className={styles.navLinks}>
                 <a href="#about">About</a>
-                <a href="#1">Skills</a>
+                <a href="#skills">Skills</a>
                 <a href="#1">Work</a>
                 <a href="#1">Contact</a>
               </div>
@@ -77,7 +77,7 @@ function App() {
           <Row>
             <Col lg={6} className={styles.headDiv}>
               <p className={styles.tagHover}>&lt;h2&gt;</p>
-              <h2 id="about" className={styles.aboutTitle}>
+              <h2 id="skills" className={styles.aboutTitle}>
                 Skills
               </h2>
               <p className={styles.tagHover}>&lt;/h2&gt;</p>
@@ -94,7 +94,83 @@ function App() {
               </p>
               <p className={styles.tagHover}>&lt;/p&gt;</p>
             </Col>
-            <Col lg={6}></Col>
+            <Col lg={6}>
+              <div className={styles.cirkle}>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  className={styles.imageSkills}
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>{' '}
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>{' '}
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                  alt="image"
+                  width={120}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>{' '}
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                  alt="image"
+                  width={190}
+                  height={100}
+                ></img>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
+                  alt="image"
+                  width={100}
+                  height={100}
+                ></img>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>

@@ -223,5 +223,20 @@ main {
         z-index: 5;
       }
     }
+
+    .imageSkills {
+      border-radius: 20px;
+    }
+    .cirkle {
+      padding-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        z-index: 99;
+        margin: 30px;
+      }
+    }
   }
 }
