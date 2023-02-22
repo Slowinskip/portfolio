@@ -18,7 +18,7 @@ function App() {
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#1">Work</a>
-                <a href="#1">Contact</a>
+                <a href="#contact">Contact</a>
               </div>
             </Col>
           </Row>
@@ -231,6 +231,25 @@ function App() {
                 </div>
               </Col>
             </Row>
+            <div className={styles.separate}>
+              <Row>
+                <Col lg={6} className={styles.headDiv}>
+                  <p className={styles.tagHover}>&lt;h2&gt;</p>
+                  <h2 id="contact" className={styles.aboutTitle}>
+                    Contact
+                  </h2>
+                  <p className={styles.tagHover}>&lt;/h2&gt;</p>
+                  <p className={styles.tagHover}>&lt;p&gt;</p>
+                  <p className={styles.PnotesContact}>
+                    You can contact me by email or linked <br />
+                    Email: patryk_slowinski@o2.pl <br />
+                    Linked: <a href="/">Click here</a>
+                  </p>
+                  <p className={styles.tagHover}>&lt;/p&gt;</p>
+                  <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
+                </Col>
+              </Row>
+            </div>
           </div>
         </Container>
       </div>
