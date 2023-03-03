@@ -144,7 +144,8 @@ function App() {
                   in ads, I completed a free html course which I really liked{' '}
                   <br />
                   Since then I have completed Bootcamp: Full Stack Plus which
-                  lasted 10 months organized by Kodilla.com <br />
+                  lasted 10 months organized by Kodilla.com, passing the final
+                  project with a score of 24/25 points <br />
                   Currently, I am training all the time on freecodecamp.org and
                   spend my free time on codewars.com and opening my own
                   projects. <br />
