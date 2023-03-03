@@ -273,4 +273,13 @@ main {
       }
     }
   }
+  .card_wrapper {
+    background-color: transparent;
+    z-index: 99;
+
+    .card_button {
+      background-color: transparent;
+      border: none;
+    }
+  }
 }

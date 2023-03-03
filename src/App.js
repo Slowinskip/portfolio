@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import styles from './app.module.scss'
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
               <div className={styles.navLinks}>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
-                <a href="#1">Work</a>
+                <a href="#works">Work</a>
                 <a href="#contact">Contact</a>
               </div>
             </Col>
@@ -232,6 +232,59 @@ function App() {
                 </div>
               </Col>
             </Row>
+            <div className={styles.separate}>
+              {' '}
+              <Row>
+                <Col lg={12} className={styles.headDiv}>
+                  <p className={styles.tagHover}>&lt;h2&gt;</p>
+                  <h2 id="works" className={styles.aboutTitle}>
+                    Work
+                  </h2>
+                  <p className={styles.tagHover}>&lt;/h2&gt;</p>
+                  <p className={styles.tagHover}>&lt;p&gt;</p>
+                  <p className={styles.PnotesContact}>
+                    I use free hosts to publish my projects, so it may take a
+                    while for them to load.
+                  </p>
+                  <p className={styles.tagHover}>&lt;/p&gt;</p>{' '}
+                </Col>
+                <Col>
+                  <Card
+                    style={{ width: '100%' }}
+                    className={styles.card_wrapper}
+                  >
+                    <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                    <Button className={styles.card_button}>
+                      View the project
+                    </Button>
+                  </Card>
+                </Col>{' '}
+                <Col>
+                  <Card
+                    style={{ width: '100%' }}
+                    className={styles.card_wrapper}
+                  >
+                    1
+                  </Card>
+                </Col>
+                <Col>
+                  <Card
+                    style={{ width: '100%' }}
+                    className={styles.card_wrapper}
+                  >
+                    1
+                  </Card>
+                </Col>{' '}
+                <Col>
+                  <Card
+                    style={{ width: '100%' }}
+                    className={styles.card_wrapper}
+                  >
+                    1
+                  </Card>
+                </Col>{' '}
+              </Row>
+            </div>
             <div className={styles.separate}>
               <Row>
                 <Col lg={6} className={styles.headDiv}>
