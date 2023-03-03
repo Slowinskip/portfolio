@@ -242,7 +242,7 @@ function App() {
                   </h2>
                   <p className={styles.tagHover}>&lt;/h2&gt;</p>
                   <p className={styles.tagHover}>&lt;p&gt;</p>
-                  <p className={styles.PnotesContact}>
+                  <p className={styles.PnotesWork}>
                     I use free hosts to publish my projects, so it may take a
                     while for them to load.
                   </p>
@@ -254,7 +254,11 @@ function App() {
                     className={styles.card_wrapper}
                   >
                     <Card.Img src="./foto/fstep.PNG"></Card.Img>
-                    <Button className={styles.card_button}>
+                    <Button
+                      href="https://fs-shoesshopp.onrender.com/"
+                      target="_blank"
+                      className={styles.card_button}
+                    >
                       View the project
                     </Button>
                   </Card>
@@ -264,7 +268,14 @@ function App() {
                     style={{ width: '100%' }}
                     className={styles.card_wrapper}
                   >
-                    1
+                    <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                    <Button
+                      href="https://fs-shoesshopp.onrender.com/"
+                      target="_blank"
+                      className={styles.card_button}
+                    >
+                      View the project
+                    </Button>
                   </Card>
                 </Col>
                 <Col>
@@ -272,7 +283,14 @@ function App() {
                     style={{ width: '100%' }}
                     className={styles.card_wrapper}
                   >
-                    1
+                    <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                    <Button
+                      href="https://fs-shoesshopp.onrender.com/"
+                      target="_blank"
+                      className={styles.card_button}
+                    >
+                      View the project
+                    </Button>
                   </Card>
                 </Col>{' '}
                 <Col>
@@ -280,7 +298,14 @@ function App() {
                     style={{ width: '100%' }}
                     className={styles.card_wrapper}
                   >
-                    1
+                    <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                    <Button
+                      href="https://fs-shoesshopp.onrender.com/"
+                      target="_blank"
+                      className={styles.card_button}
+                    >
+                      View the project
+                    </Button>
                   </Card>
                 </Col>{' '}
               </Row>

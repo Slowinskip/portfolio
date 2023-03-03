@@ -206,7 +206,22 @@ main {
         transform: translate(-50%, -50%);
         z-index: -1;
       }
+      .PnotesWork::before {
+        content: 'Work';
+        min-height: 110px;
+        font-size: 400px;
+        color: #766c6c;
+        width: 100%;
+        opacity: 0.3;
+        position: absolute;
+        top: 600%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
       .PnotesAbout,
+      .PnotesWork,
       .PnotesSkills,
       .PnotesContact {
         position: relative;
@@ -276,10 +291,15 @@ main {
   .card_wrapper {
     background-color: transparent;
     z-index: 99;
+    border: 1px solid #636e72;
 
     .card_button {
       background-color: transparent;
       border: none;
+
+      &:hover {
+        color: $hover-color;
+      }
     }
   }
 }
