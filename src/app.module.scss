@@ -163,24 +163,6 @@ main {
         }
       }
 
-      &:hover {
-        .tagHover {
-          margin-left: 20px;
-          opacity: 1;
-        }
-        .tagHoverBody {
-          margin-left: 10px;
-          opacity: 1;
-        }
-        h2 {
-          color: $hover-color;
-          margin-left: 40px;
-        }
-        h1 {
-          margin-left: 40px;
-        }
-      }
-
       .tagHover,
       .tagHoverBody {
         margin: 12px 0;
@@ -300,6 +282,23 @@ main {
       &:hover {
         color: $hover-color;
       }
+    }
+  }
+  .separate:hover {
+    .tagHover {
+      margin-left: 20px;
+      opacity: 1;
+    }
+    .tagHoverBody {
+      margin-left: 10px;
+      opacity: 1;
+    }
+    h2 {
+      color: $hover-color;
+      margin-left: 40px;
+    }
+    h1 {
+      margin-left: 40px;
     }
   }
 }

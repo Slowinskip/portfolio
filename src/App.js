@@ -232,73 +232,73 @@ function App() {
                 </div>
               </Col>
             </Row>
-            <div className={styles.separate}>
-              {' '}
-              <Row>
-                <Col lg={12} className={styles.headDiv}>
-                  <p className={styles.tagHover}>&lt;h2&gt;</p>
-                  <h2 id="works" className={styles.aboutTitle}>
-                    Work
-                  </h2>
-                  <p className={styles.tagHover}>&lt;/h2&gt;</p>
-                  <p className={styles.tagHover}>&lt;p&gt;</p>
-                  <p className={styles.PnotesWork}>
-                    I use free hosts to publish my projects, so it may take a
-                    while for them to load.
-                  </p>
-                  <p className={styles.tagHover}>&lt;/p&gt;</p>{' '}
-                </Col>
-                <Col md={6} lg={4}>
-                  <Card
-                    // style={{ height: '50px' }}
-                    className={styles.card_wrapper}
+          </div>
+          <div className={styles.separate}>
+            {' '}
+            <Row>
+              <Col lg={12} className={styles.headDiv}>
+                <p className={styles.tagHover}>&lt;h2&gt;</p>
+                <h2 id="works" className={styles.aboutTitle}>
+                  Work
+                </h2>
+                <p className={styles.tagHover}>&lt;/h2&gt;</p>
+                <p className={styles.tagHover}>&lt;p&gt;</p>
+                <p className={styles.PnotesWork}>
+                  I use free hosts to publish my projects, so it may take a
+                  while for them to load.
+                </p>
+                <p className={styles.tagHover}>&lt;/p&gt;</p>{' '}
+              </Col>
+              <Col md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                  <Button
+                    href="https://fs-shoesshopp.onrender.com/"
+                    target="_blank"
+                    className={styles.card_button}
                   >
-                    <Card.Img src="./foto/fstep.PNG"></Card.Img>
-                    <Button
-                      href="https://fs-shoesshopp.onrender.com/"
-                      target="_blank"
-                      className={styles.card_button}
-                    >
-                      View the project
-                    </Button>
-                  </Card>
-                </Col>{' '}
-                <Col md={6} lg={4}>
-                  <Card
-                    // style={{ height: '50px' }}
-                    className={styles.card_wrapper}
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{' '}
+              <Col md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img src="https://media.istockphoto.com/id/1407535378/vector/yellow-and-black-color-with-line-striped-label-banner-with-word-work-in-process.jpg?b=1&s=170667a&w=0&k=20&c=1NAgakcJ96KGxHyjk1YA_rIqAREODcfVzbGP6J6Ip0A="></Card.Img>
+                  <Button
+                    href=""
+                    target="_blank"
+                    className={styles.card_button}
                   >
-                    <Card.Img src="https://media.istockphoto.com/id/1407535378/vector/yellow-and-black-color-with-line-striped-label-banner-with-word-work-in-process.jpg?b=1&s=170667a&w=0&k=20&c=1NAgakcJ96KGxHyjk1YA_rIqAREODcfVzbGP6J6Ip0A="></Card.Img>
-                    <Button
-                      href=""
-                      target="_blank"
-                      className={styles.card_button}
-                    >
-                      View the project
-                    </Button>
-                  </Card>
-                </Col>{' '}
-              </Row>
-            </div>
-            <div className={styles.separate}>
-              <Row>
-                <Col lg={6} className={styles.headDiv}>
-                  <p className={styles.tagHover}>&lt;h2&gt;</p>
-                  <h2 id="contact" className={styles.aboutTitle}>
-                    Contact
-                  </h2>
-                  <p className={styles.tagHover}>&lt;/h2&gt;</p>
-                  <p className={styles.tagHover}>&lt;p&gt;</p>
-                  <p className={styles.PnotesContact}>
-                    You can contact me by email or linked <br />
-                    Email: patryk_slowinski@o2.pl <br />
-                    Linked: <a href="/">Click here</a>
-                  </p>
-                  <p className={styles.tagHover}>&lt;/p&gt;</p>
-                  <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
-                </Col>
-              </Row>
-            </div>
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{' '}
+            </Row>
+          </div>
+          <div className={styles.separate}>
+            <Row>
+              <Col lg={6} className={styles.headDiv}>
+                <p className={styles.tagHover}>&lt;h2&gt;</p>
+                <h2 id="contact" className={styles.aboutTitle}>
+                  Contact
+                </h2>
+                <p className={styles.tagHover}>&lt;/h2&gt;</p>
+                <p className={styles.tagHover}>&lt;p&gt;</p>
+                <p className={styles.PnotesContact}>
+                  You can contact me by email or linked <br />
+                  Email: patryk_slowinski@o2.pl <br />
+                  Linked: <a href="/">Click here</a>
+                </p>
+                <p className={styles.tagHover}>&lt;/p&gt;</p>
+                <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
+              </Col>
+            </Row>
           </div>
         </Container>
       </div>
