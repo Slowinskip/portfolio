@@ -277,7 +277,7 @@ function App() {
                     src="./foto/comp-shop.JPG"
                   ></Card.Img>
                   <Button
-                    href="https://comp-shop.onrender.com"
+                    href="https://compshop.onrender.com/"
                     target="_blank"
                     className={styles.card_button}
                   >
