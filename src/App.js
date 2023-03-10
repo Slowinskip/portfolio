@@ -254,7 +254,10 @@ function App() {
                   // style={{ height: '50px' }}
                   className={styles.card_wrapper}
                 >
-                  <Card.Img src="./foto/fstep.PNG"></Card.Img>
+                  <Card.Img
+                    className={styles.projectImg}
+                    src="./foto/fstep.PNG"
+                  ></Card.Img>
                   <Button
                     href="https://fs-shoesshopp.onrender.com/"
                     target="_blank"
@@ -269,7 +272,28 @@ function App() {
                   // style={{ height: '50px' }}
                   className={styles.card_wrapper}
                 >
-                  <Card.Img src="https://media.istockphoto.com/id/1407535378/vector/yellow-and-black-color-with-line-striped-label-banner-with-word-work-in-process.jpg?b=1&s=170667a&w=0&k=20&c=1NAgakcJ96KGxHyjk1YA_rIqAREODcfVzbGP6J6Ip0A="></Card.Img>
+                  <Card.Img
+                    className={styles.projectImg}
+                    src="./foto/comp-shop.JPG"
+                  ></Card.Img>
+                  <Button
+                    href="https://comp-shop.onrender.com"
+                    target="_blank"
+                    className={styles.card_button}
+                  >
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{' '}
+              <Col md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img
+                    className={styles.projectImg}
+                    src="https://media.istockphoto.com/id/1407535378/vector/yellow-and-black-color-with-line-striped-label-banner-with-word-work-in-process.jpg?b=1&s=170667a&w=0&k=20&c=1NAgakcJ96KGxHyjk1YA_rIqAREODcfVzbGP6J6Ip0A="
+                  ></Card.Img>
                   <Button
                     href=""
                     target="_blank"

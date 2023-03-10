@@ -275,6 +275,10 @@ main {
     z-index: 99;
     border: 1px solid #636e72;
 
+    .projectImg {
+      height: 200px;
+    }
+
     .card_button {
       background-color: transparent;
       border: none;
