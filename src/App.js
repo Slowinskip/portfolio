@@ -160,16 +160,6 @@ function App() {
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>
               </Col>
-              <Col className="d-flex justify-content-center align-items-center">
-                {' '}
-                <img
-                  className={styles.meImage}
-                  src={me2}
-                  alt="img"
-                  width={550}
-                  height={550}
-                ></img>
-              </Col>
             </Row>
           </div>{' '}
           <div className={styles.separate}>
