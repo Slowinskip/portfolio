@@ -1,6 +1,12 @@
 import { useState } from 'react'
-import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { Button, Card, Col, Container, Dropdown, Row } from 'react-bootstrap'
 import styles from './app.module.scss'
+import fstep from './foto/fstep.PNG'
+import compshop from './foto/comp-shop.JPG'
+import me from './foto/me.png'
+import me2 from './foto/me2.png'
+import me3 from './foto/me3.png'
+
 function App() {
   return (
     <main>
@@ -14,12 +20,35 @@ function App() {
               </div>
             </Col>
             <Col>
-              <div className={styles.navLinks}>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#works">Work</a>
-                <a href="#contact">Contact</a>
-              </div>
+              {window.innerWidth > 500 ? (
+                <div className={styles.navLinks}>
+                  <a href="#about">About</a>
+                  <a href="#skills">Skills</a>
+                  <a href="#works">Work</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              ) : (
+                <div className="d-flex justify-content-center align-items-center">
+                  <Dropdown className="mt-3">
+                    <Dropdown.Toggle
+                      className={styles.dropDownMenu}
+                      variant="Secondary"
+                      id="dropdown-basic"
+                    >
+                      Menu
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu
+                      className={styles.dropDownMenu}
+                      variant="dark"
+                    >
+                      <Dropdown.Item href="#about">About</Dropdown.Item>
+                      <Dropdown.Item href="#skills">Skills</Dropdown.Item>
+                      <Dropdown.Item href="#works">Work</Dropdown.Item>
+                      <Dropdown.Item href="#contact">Contact</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </div>
+              )}
             </Col>
           </Row>
         </Container>
@@ -48,12 +77,15 @@ function App() {
               <Col md={12} lg={5} className={styles.rotation}>
                 <div className={styles.box}>
                   <div className={styles.content}>
-                    <div className={styles.core}></div>
+                    <div className={styles.core}>
+                      {' '}
+                      <img src={me} alt="img" width={250} height={250}></img>
+                    </div>
                     <div className={styles.a + ' ' + styles.face} id="face">
                       {' '}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>
@@ -62,7 +94,7 @@ function App() {
                       {' '}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>
@@ -71,7 +103,7 @@ function App() {
                       {' '}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>
@@ -81,7 +113,7 @@ function App() {
                       <img
                         className={styles.imageSkills}
                         src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>{' '}
@@ -90,7 +122,7 @@ function App() {
                       {' '}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>{' '}
@@ -99,7 +131,7 @@ function App() {
                       {' '}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
-                        alt="image"
+                        alt="img"
                         width={100}
                         height={100}
                       ></img>{' '}
@@ -127,6 +159,16 @@ function App() {
                   love snowboarding. I spend the rest of my time coding :)
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>
+              </Col>
+              <Col className="d-flex justify-content-center align-items-center">
+                {' '}
+                <img
+                  className={styles.meImage}
+                  src={me2}
+                  alt="img"
+                  width={550}
+                  height={550}
+                ></img>
               </Col>
             </Row>
           </div>{' '}
@@ -158,74 +200,74 @@ function App() {
                 <div className={styles.cirkle}>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     className={styles.imageSkills}
                     src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>{' '}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>{' '}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-                    alt="image"
+                    alt="img"
                     width={120}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>{' '}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
-                    alt="image"
+                    alt="img"
                     width={190}
                     height={100}
                   ></img>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
-                    alt="image"
+                    alt="img"
                     width={100}
                     height={100}
                   ></img>
@@ -256,7 +298,7 @@ function App() {
                 >
                   <Card.Img
                     className={styles.projectImg}
-                    src="./foto/fstep.PNG"
+                    src={fstep}
                   ></Card.Img>
                   <Button
                     href="https://fs-shoesshopp.onrender.com/"
@@ -274,7 +316,7 @@ function App() {
                 >
                   <Card.Img
                     className={styles.projectImg}
-                    src="./foto/comp-shop.JPG"
+                    src={compshop}
                   ></Card.Img>
                   <Button
                     href="https://compshop.onrender.com/"
@@ -321,6 +363,16 @@ function App() {
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>
                 <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
+              </Col>
+              <Col className="d-flex justify-content-center align-items-center">
+                {' '}
+                <img
+                  className={styles.meImage}
+                  src={me3}
+                  alt="img"
+                  width={450}
+                  height={450}
+                ></img>
               </Col>
             </Row>
           </div>
