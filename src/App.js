@@ -303,7 +303,7 @@ function App() {
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>{' '}
               </Col>
-              <Col md={6} lg={4}>
+              <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
                   className={styles.card_wrapper}
@@ -321,7 +321,7 @@ function App() {
                   </Button>
                 </Card>
               </Col>{' '}
-              <Col md={6} lg={4}>
+              <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
                   className={styles.card_wrapper}
@@ -339,7 +339,7 @@ function App() {
                   </Button>
                 </Card>
               </Col>{' '}
-              <Col md={6} lg={4}>
+              <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
                   className={styles.card_wrapper}
