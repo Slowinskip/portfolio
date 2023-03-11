@@ -188,9 +188,30 @@ main {
         opacity: 0.3;
         position: absolute;
         top: 90%;
-        left: 100%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
+        @media (min-width: 0px) {
+          font-size: 80px;
+        }
+        @media (min-width: 400px) {
+          font-size: 110px;
+        }
+        @media (min-width: 750px) {
+          font-size: 150px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 200px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 250px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 350px;
+        }
+        @media (min-width: 1800px) {
+          font-size: 400px;
+        }
       }
       .PnotesWork::before {
         content: 'Work';
@@ -201,9 +222,30 @@ main {
         opacity: 0.3;
         position: absolute;
         top: 600%;
-        left: 75%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
+        @media (min-width: 0px) {
+          font-size: 80px;
+        }
+        @media (min-width: 400px) {
+          font-size: 110px;
+        }
+        @media (min-width: 750px) {
+          font-size: 150px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 200px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 250px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 350px;
+        }
+        @media (min-width: 1800px) {
+          font-size: 400px;
+        }
       }
 
       .PnotesAbout,
@@ -234,6 +276,28 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
+
+        @media (min-width: 0px) {
+          font-size: 80px;
+        }
+        @media (min-width: 400px) {
+          font-size: 110px;
+        }
+        @media (min-width: 750px) {
+          font-size: 150px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 200px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 250px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 350px;
+        }
+        @media (min-width: 1800px) {
+          font-size: 400px;
+        }
       }
 
       .PnotesSkills::before {
@@ -245,9 +309,30 @@ main {
         opacity: 0.3;
         position: absolute;
         top: 90%;
-        left: 100%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
+        @media (min-width: 0px) {
+          font-size: 80px;
+        }
+        @media (min-width: 400px) {
+          font-size: 110px;
+        }
+        @media (min-width: 750px) {
+          font-size: 150px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 200px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 250px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 350px;
+        }
+        @media (min-width: 1800px) {
+          font-size: 400px;
+        }
       }
       .PnotesSkills {
         position: relative;

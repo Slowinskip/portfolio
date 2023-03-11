@@ -4,8 +4,9 @@ import styles from './app.module.scss'
 import fstep from './foto/fstep.PNG'
 import compshop from './foto/comp-shop.JPG'
 import me from './foto/me.png'
-import me2 from './foto/me2.png'
 import me3 from './foto/me3.png'
+import { BsLinkedin } from 'react-icons/bs'
+import { AiFillGithub } from 'react-icons/ai'
 
 function App() {
   return (
@@ -26,6 +27,15 @@ function App() {
                   <a href="#skills">Skills</a>
                   <a href="#works">Work</a>
                   <a href="#contact">Contact</a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/patryk-s%C5%82owi%C5%84ski-2a8840269/"
+                  >
+                    <BsLinkedin />
+                  </a>
+                  <a target="_blank" href="https://github.com/Slowinskip">
+                    <AiFillGithub />
+                  </a>
                 </div>
               ) : (
                 <div className="d-flex justify-content-center align-items-center">
@@ -38,13 +48,25 @@ function App() {
                       Menu
                     </Dropdown.Toggle>
                     <Dropdown.Menu
-                      className={styles.dropDownMenu}
+                      className={'text-center ' + styles.dropDownMenu}
                       variant="dark"
                     >
                       <Dropdown.Item href="#about">About</Dropdown.Item>
                       <Dropdown.Item href="#skills">Skills</Dropdown.Item>
                       <Dropdown.Item href="#works">Work</Dropdown.Item>
                       <Dropdown.Item href="#contact">Contact</Dropdown.Item>
+                      <Dropdown.Item
+                        target="_blank"
+                        href="https://www.linkedin.com/in/patryk-s%C5%82owi%C5%84ski-2a8840269/"
+                      >
+                        <BsLinkedin />
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        target="_blank"
+                        href="https://github.com/Slowinskip"
+                      >
+                        <AiFillGithub />
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 </div>
@@ -349,7 +371,13 @@ function App() {
                 <p className={styles.PnotesContact}>
                   You can contact me by email or linked <br />
                   Email: patryk_slowinski@o2.pl <br />
-                  Linked: <a href="/">Click here</a>
+                  Linked:
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/patryk-s%C5%82owi%C5%84ski-2a8840269/"
+                  >
+                    Click here
+                  </a>
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>
                 <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
