@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import { Button, Card, Col, Container, Dropdown, Row } from 'react-bootstrap'
-import styles from './app.module.scss'
-import fstep from './foto/fstep.PNG'
-import compshop from './foto/comp-shop.JPG'
-import me from './foto/me.png'
-import me3 from './foto/me3.png'
-import { BsLinkedin } from 'react-icons/bs'
-import { AiFillGithub } from 'react-icons/ai'
+import { useState } from "react";
+import { Button, Card, Col, Container, Dropdown, Row } from "react-bootstrap";
+import styles from "./app.module.scss";
+import fstep from "./foto/fstep.PNG";
+import compshop from "./foto/comp-shop.JPG";
+import me from "./foto/me.png";
+import me3 from "./foto/me3.png";
+import rentCar from "./foto/RentCar1.jpg";
+import { BsLinkedin } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
                       Menu
                     </Dropdown.Toggle>
                     <Dropdown.Menu
-                      className={'text-center ' + styles.dropDownMenu}
+                      className={"text-center " + styles.dropDownMenu}
                       variant="dark"
                     >
                       <Dropdown.Item href="#about">About</Dropdown.Item>
@@ -100,11 +101,11 @@ function App() {
                 <div className={styles.box}>
                   <div className={styles.content}>
                     <div className={styles.core}>
-                      {' '}
+                      {" "}
                       <img src={me} alt="img" width={250} height={250}></img>
                     </div>
-                    <div className={styles.a + ' ' + styles.face} id="face">
-                      {' '}
+                    <div className={styles.a + " " + styles.face} id="face">
+                      {" "}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
                         alt="img"
@@ -112,8 +113,8 @@ function App() {
                         height={100}
                       ></img>
                     </div>
-                    <div className={styles.b + ' ' + styles.face} id="b">
-                      {' '}
+                    <div className={styles.b + " " + styles.face} id="b">
+                      {" "}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                         alt="img"
@@ -121,8 +122,8 @@ function App() {
                         height={100}
                       ></img>
                     </div>
-                    <div className={styles.c + ' ' + styles.face} id="c">
-                      {' '}
+                    <div className={styles.c + " " + styles.face} id="c">
+                      {" "}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
                         alt="img"
@@ -130,39 +131,39 @@ function App() {
                         height={100}
                       ></img>
                     </div>
-                    <div className={styles.d + ' ' + styles.face} id="d">
-                      {' '}
+                    <div className={styles.d + " " + styles.face} id="d">
+                      {" "}
                       <img
                         className={styles.imageSkills}
                         src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
                         alt="img"
                         width={100}
                         height={100}
-                      ></img>{' '}
+                      ></img>{" "}
                     </div>
-                    <div className={styles.e + ' ' + styles.face} id="e">
-                      {' '}
+                    <div className={styles.e + " " + styles.face} id="e">
+                      {" "}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
                         alt="img"
                         width={100}
                         height={100}
-                      ></img>{' '}
+                      ></img>{" "}
                     </div>
                     <div className={styles.f} id="f">
-                      {' '}
+                      {" "}
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
                         alt="img"
                         width={100}
                         height={100}
-                      ></img>{' '}
+                      ></img>{" "}
                     </div>
                   </div>
                 </div>
               </Col>
             </Row>
-          </div>{' '}
+          </div>{" "}
           <div className={styles.separate}>
             <Row>
               <Col lg={6} className={styles.headDiv}>
@@ -183,7 +184,7 @@ function App() {
                 <p className={styles.tagHover}>&lt;/p&gt;</p>
               </Col>
             </Row>
-          </div>{' '}
+          </div>{" "}
           <div className={styles.separate}>
             <Row>
               <Col lg={6} className={styles.headDiv}>
@@ -195,7 +196,7 @@ function App() {
                 <p className={styles.tagHover}>&lt;p&gt;</p>
                 <p className={styles.PnotesSkills}>
                   I started my programming adventure in April 2022. Interested
-                  in ads, I completed a free html course which I really liked{' '}
+                  in ads, I completed a free html course which I really liked{" "}
                   <br />
                   Since then I have completed Bootcamp: Full Stack Plus which
                   lasted 10 months organized by Kodilla.com, passing the final
@@ -222,7 +223,7 @@ function App() {
                     alt="img"
                     width={100}
                     height={100}
-                  ></img>{' '}
+                  ></img>{" "}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
                     alt="img"
@@ -234,7 +235,7 @@ function App() {
                     alt="img"
                     width={100}
                     height={100}
-                  ></img>{' '}
+                  ></img>{" "}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
                     alt="img"
@@ -258,7 +259,7 @@ function App() {
                     alt="img"
                     width={100}
                     height={100}
-                  ></img>{' '}
+                  ></img>{" "}
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
                     alt="img"
@@ -288,7 +289,7 @@ function App() {
             </Row>
           </div>
           <div className={styles.separate}>
-            {' '}
+            {" "}
             <Row>
               <Col lg={12} className={styles.headDiv}>
                 <p className={styles.tagHover}>&lt;h2&gt;</p>
@@ -301,7 +302,7 @@ function App() {
                   I use free hosts to publish my projects, so it may take a
                   while for them to load.
                 </p>
-                <p className={styles.tagHover}>&lt;/p&gt;</p>{' '}
+                <p className={styles.tagHover}>&lt;/p&gt;</p>{" "}
               </Col>
               <Col className="py-3" md={6} lg={4}>
                 <Card
@@ -320,7 +321,7 @@ function App() {
                     View the project
                   </Button>
                 </Card>
-              </Col>{' '}
+              </Col>{" "}
               <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
@@ -338,7 +339,25 @@ function App() {
                     View the project
                   </Button>
                 </Card>
-              </Col>{' '}
+              </Col>{" "}
+              <Col className="py-3" md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img
+                    className={styles.projectImg}
+                    src={rentCar}
+                  ></Card.Img>
+                  <Button
+                    href="https://slowinski-rentcar.netlify.app/"
+                    target="_blank"
+                    className={styles.card_button}
+                  >
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{" "}
               <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
@@ -356,7 +375,7 @@ function App() {
                     View the project
                   </Button>
                 </Card>
-              </Col>{' '}
+              </Col>{" "}
             </Row>
           </div>
           <div className={styles.separate}>
@@ -383,7 +402,7 @@ function App() {
                 <p className={styles.tagHoverBody}>&lt;/body&gt;</p>
               </Col>
               <Col className="d-flex justify-content-center align-items-center">
-                {' '}
+                {" "}
                 <img
                   className={styles.meImage}
                   src={me3}
@@ -397,7 +416,7 @@ function App() {
         </Container>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
