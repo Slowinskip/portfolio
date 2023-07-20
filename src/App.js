@@ -311,6 +311,24 @@ function App() {
                 >
                   <Card.Img
                     className={styles.projectImg}
+                    src={rentCar}
+                  ></Card.Img>
+                  <Button
+                    href="https://slowinskip-rentcar.netlify.app/contact"
+                    target="_blank"
+                    className={styles.card_button}
+                  >
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{" "}
+              <Col className="py-3" md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img
+                    className={styles.projectImg}
                     src={fstep}
                   ></Card.Img>
                   <Button
@@ -333,24 +351,6 @@ function App() {
                   ></Card.Img>
                   <Button
                     href="https://compshop.onrender.com/"
-                    target="_blank"
-                    className={styles.card_button}
-                  >
-                    View the project
-                  </Button>
-                </Card>
-              </Col>{" "}
-              <Col className="py-3" md={6} lg={4}>
-                <Card
-                  // style={{ height: '50px' }}
-                  className={styles.card_wrapper}
-                >
-                  <Card.Img
-                    className={styles.projectImg}
-                    src={rentCar}
-                  ></Card.Img>
-                  <Button
-                    href="https://slowinski-rentcar.netlify.app/"
                     target="_blank"
                     className={styles.card_button}
                   >
