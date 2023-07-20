@@ -314,7 +314,7 @@ function App() {
                     src={rentCar}
                   ></Card.Img>
                   <Button
-                    href="https://slowinskip-rentcar.netlify.app/contact"
+                    href="https://slowinskip-rentcar.netlify.app/"
                     target="_blank"
                     className={styles.card_button}
                   >
