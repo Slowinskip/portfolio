@@ -5,6 +5,7 @@ import fstep from "./foto/fstep.PNG";
 import compshop from "./foto/comp-shop.JPG";
 import me from "./foto/me.png";
 import me3 from "./foto/me3.png";
+import speedex from "./foto/Speedex.jpg";
 import rentCar from "./foto/RentCar1.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
@@ -304,6 +305,24 @@ function App() {
                 </p>
                 <p className={styles.tagHover}>&lt;/p&gt;</p>{" "}
               </Col>
+              <Col className="py-3" md={6} lg={4}>
+                <Card
+                  // style={{ height: '50px' }}
+                  className={styles.card_wrapper}
+                >
+                  <Card.Img
+                    className={styles.projectImg}
+                    src={speedex}
+                  ></Card.Img>
+                  <Button
+                    href="https://slowinskip-speedex.netlify.app/"
+                    target="_blank"
+                    className={styles.card_button}
+                  >
+                    View the project
+                  </Button>
+                </Card>
+              </Col>{" "}
               <Col className="py-3" md={6} lg={4}>
                 <Card
                   // style={{ height: '50px' }}
